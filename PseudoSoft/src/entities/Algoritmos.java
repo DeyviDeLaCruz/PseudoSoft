@@ -13,7 +13,19 @@ public class Algoritmos {
     //los demas no deben modificar esa clase ok
     // luego que hayas echo codigo para mandarlo haces esto presta atencion 
     
+    //esa es te lo anoto
+    /*
+        ENVIAR
+        1. proyecto - git - add
+        2. proyecto - git - commit
+        3. proyecto - git - remote - push
     
+        ACTUALIZAR
+        1.  proyecto - git - remote - pull
+    
+        listo
+        envia tu aver
+    */
     
     
 }
