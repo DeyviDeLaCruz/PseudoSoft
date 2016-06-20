@@ -31,6 +31,6 @@ public class Algoritmos {
     /*
     listo es algo tedioso pero ya te acostumbras y es mejor que avanzar cada uno por su lado 
     */
-    
+    //ok manes
     
 }
