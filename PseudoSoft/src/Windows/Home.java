@@ -16,6 +16,8 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -27,21 +29,114 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        btn_evaluar = new javax.swing.JButton();
+        btn_generar = new javax.swing.JButton();
+        btn_aprender = new javax.swing.JButton();
+        btn_salir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        Opciones = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_evaluar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_evaluar.setForeground(new java.awt.Color(226, 103, 13));
+        btn_evaluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/home_icon_monitorear.png"))); // NOI18N
+        btn_evaluar.setText("Evaluar");
+        btn_evaluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btn_evaluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 150, 70));
+
+        btn_generar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_generar.setForeground(new java.awt.Color(226, 103, 13));
+        btn_generar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/home_icon_Calculator.png"))); // NOI18N
+        btn_generar.setText("Generar");
+        btn_generar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btn_generar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, 160, 70));
+
+        btn_aprender.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_aprender.setForeground(new java.awt.Color(226, 103, 13));
+        btn_aprender.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/home_icon_cuaderno.png"))); // NOI18N
+        btn_aprender.setText("Aprender");
+        btn_aprender.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btn_aprender, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, 160, 70));
+
+        btn_salir.setBackground(new java.awt.Color(204, 0, 0));
+        btn_salir.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_salir.setForeground(new java.awt.Color(255, 255, 255));
+        btn_salir.setText("Salir");
+        btn_salir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/home_fondo.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 840, 470));
+
+        jMenu1.setText("Archivo");
+
+        Opciones.setText("Opciones");
+        jMenu1.add(Opciones);
+
+        jMenuItem6.setText("Salir");
+        jMenu1.add(jMenuItem6);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Operaciones");
+
+        jMenuItem1.setText("Aprender");
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("Generear Pseudoaleatorios");
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Evaluar Pseudoaleatorios");
+        jMenu2.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Ayuda");
+
+        jMenuItem4.setText("Como Usar PseudoSoft");
+        jMenu3.add(jMenuItem4);
+
+        jMenuItem5.setText("Feedback");
+        jMenu3.add(jMenuItem5);
+
+        jMenuItem7.setText("Acerca de");
+        jMenu3.add(jMenuItem7);
+
+        jMenuBar1.add(jMenu3);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btn_salirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +174,23 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Opciones;
+    private javax.swing.JButton btn_aprender;
+    private javax.swing.JButton btn_evaluar;
+    private javax.swing.JButton btn_generar;
+    private javax.swing.JButton btn_salir;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
