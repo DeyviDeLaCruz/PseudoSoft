@@ -75,16 +75,19 @@ public class Cuadradosmedios {
 
     
     //funciones
-    public void Generarcm(int semilla2){
-    
+    public void Generarcm(){
+    semillacuadrada=0;
+        System.out.println(""+semilla);
         for (int i = 0; i < cantidad; i++) {
             semillacuadrada = semilla * semilla;
+            System.out.println(""+semillacuadrada);
             String Nsemillacuadrada;
             Nsemillacuadrada = String.valueOf(semillacuadrada);
             String D4;
             D4 = Nsemillacuadrada.substring(2, 4);
             semilla = Double.parseDouble(D4); //tambien puede ir entero
             
+           // System.out.println("0."+semilla);
         }
     }
     
